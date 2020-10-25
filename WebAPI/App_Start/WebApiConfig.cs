@@ -20,7 +20,7 @@ namespace WebAPI
                 routeTemplate: "institute/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-            //Output format: Json
+            //Output format: Json 
             //If you like XML to be return to client, remove below line
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
         }
